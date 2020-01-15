@@ -7,7 +7,6 @@ SECRET_KEY = 'e@45uldk@fz!0d+q=m(0ntfv($^tmbu-0!td0knpng660v$17_'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'powerful-crag-82238.herokuapp.com',
     'localhost',
 ]
 
@@ -61,22 +60,22 @@ WSGI_APPLICATION = 'Authentication.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'd2302l9d56ptfh',
-#         'USER': 'dgmntshvbnvicz',
-#         'PASSWORD': 'c1b74f0681fcaa5ef9b81f542ea2fdf273a5c1a060cbc73fe9c53ce63f6d6c53',
-#         'HOST': 'ec2-54-83-55-125.compute-1.amazonaws.com'
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd1jggkrnfg7gpi',
+        'USER': 'ktpglvatzpsbtp',
+        'PASSWORD': '54eaabaaa9b22900e52dd112959ef8ea3b3856edd82b0a15649cf6aa6a20909e',
+        'HOST': 'ec2-3-214-53-225.compute-1.amazonaws.com'
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
